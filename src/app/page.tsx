@@ -89,6 +89,11 @@ export default function Home(){
  const toggleTask=(id:string)=>patch("tasks",plan.tasks.map(t=>t.id===id?{...t,done:!t.done}:t));
  const toggleRun=(id:string)=>patch("runSheet",runSheet.map(r=>r.id===id?{...r,done:!r.done}:r));
 
+ const logout=async()=>{
+  await fetch("/api/auth/logout",{method:"POST"});
+  window.location.href="/login";
+ };
+
  const importGuests=()=>{
   const rows=bulkGuests.split(/\r?\n/).map(x=>x.trim()).filter(Boolean);
   const added=rows.map(line=>{
@@ -102,7 +107,7 @@ export default function Home(){
  return <main className="shell">
   <header className="topbar">
    <div><div className="eyebrow">PERURU • 29–31 OCT 2026</div><h1>{plan.meta.title}</h1><p>{plan.meta.subtitle} · {plan.meta.venue}</p></div>
-   <div className="headerActions"><div className="saveState">{saving?"Saving…":"Saved"}</div><button className="todayBtn" onClick={()=>setTab("Today")}>31 Oct Today View</button></div>
+   <div className="headerActions"><div className="saveState">{saving?"Saving…":"Saved"}</div><button className="todayBtn" onClick={()=>setTab("Today")}>31 Oct Today View</button><button className="logoutBtn" onClick={logout}>Sign out</button></div>
   </header>
 
   <nav className="tabs">{tabs.map(t=><button key={t} className={tab===t?"active":""} onClick={()=>setTab(t)}>{t}</button>)}</nav>

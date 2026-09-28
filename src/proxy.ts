@@ -1,30 +1,42 @@
 import { NextRequest, NextResponse } from "next/server";
 
-export function proxy(request: NextRequest) {
-  const expectedUser = process.env.BIRTHDAY_APP_USER;
-  const expectedPassword = process.env.BIRTHDAY_APP_PASSWORD;
+const SESSION_COOKIE = "shreekari_session";
 
-  if (!expectedUser || !expectedPassword) {
+export function proxy(request: NextRequest) {
+  const { pathname, search } = request.nextUrl;
+
+  if (
+    pathname === "/login" ||
+    pathname === "/api/auth/login" ||
+    pathname === "/api/auth/logout"
+  ) {
     return NextResponse.next();
   }
 
-  const header = request.headers.get("authorization");
-  if (header?.startsWith("Basic ")) {
-    try {
-      const decoded = atob(header.slice(6));
-      const separator = decoded.indexOf(":");
-      const user = decoded.slice(0, separator);
-      const password = decoded.slice(separator + 1);
-      if (user === expectedUser && password === expectedPassword) {
-        return NextResponse.next();
-      }
-    } catch {}
+  const sessionToken = process.env.BIRTHDAY_APP_SESSION_TOKEN;
+  if (!sessionToken) {
+    return new NextResponse("Application authentication is not configured.", {
+      status: 503,
+    });
   }
 
-  return new NextResponse("Authentication required", {
-    status: 401,
-    headers: { "WWW-Authenticate": 'Basic realm="Shreekari Birthday"' },
-  });
+  const session = request.cookies.get(SESSION_COOKIE)?.value;
+  if (session === sessionToken) {
+    return NextResponse.next();
+  }
+
+  if (pathname.startsWith("/api/")) {
+    return NextResponse.json({ error: "Authentication required." }, { status: 401 });
+  }
+
+  const loginUrl = request.nextUrl.clone();
+  loginUrl.pathname = "/login";
+  loginUrl.search = "";
+  const nextPath = pathname + search;
+  if (nextPath !== "/") {
+    loginUrl.searchParams.set("next", nextPath);
+  }
+  return NextResponse.redirect(loginUrl);
 }
 
 export const config = {
