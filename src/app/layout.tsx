@@ -5,8 +5,8 @@ import "./globals.css";
 const geist = Geist({ variable: "--font-geist", subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Event Command Center",
-  description: "Private event planning command center",
+  title: "Shreekari Birthday Command Center",
+  description: "Private family event planning and operations dashboard for Shreekari's first birthday.",
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {

@@ -25,7 +25,8 @@
       "budget": 0,
       "advance": 0,
       "status": "To contact",
-      "notes": "28/29/31 Oct coverage + first-year film"
+      "notes": "28/29/31 Oct coverage + first-year film",
+      "finalPaid": 0
     },
     {
       "id": "v-catering",
@@ -35,7 +36,8 @@
       "budget": 0,
       "advance": 0,
       "status": "To contact",
-      "notes": "31 Oct breakfast/tea/lunch/evening/night + 1 Nov morning"
+      "notes": "31 Oct breakfast/tea/lunch/evening/night + 1 Nov morning",
+      "finalPaid": 0
     },
     {
       "id": "v-anchor",
@@ -45,7 +47,8 @@
       "budget": 0,
       "advance": 0,
       "status": "To contact",
-      "notes": "Kids safety, games, ASK ME guest helper"
+      "notes": "Kids safety, games, ASK ME guest helper",
+      "finalPaid": 0
     },
     {
       "id": "v-music",
@@ -55,7 +58,8 @@
       "budget": 0,
       "advance": 0,
       "status": "To contact",
-      "notes": "Lalitha Sahasranamam, bhajans, selected songs"
+      "notes": "Lalitha Sahasranamam, bhajans, selected songs",
+      "finalPaid": 0
     },
     {
       "id": "v-nadaswaram",
@@ -65,7 +69,8 @@
       "budget": 0,
       "advance": 0,
       "status": "To contact",
-      "notes": "Auspicious arrival segment"
+      "notes": "Auspicious arrival segment",
+      "finalPaid": 0
     },
     {
       "id": "v-decoration",
@@ -75,7 +80,8 @@
       "budget": 0,
       "advance": 0,
       "status": "To contact",
-      "notes": "Home + farmhouse + functional safety lighting"
+      "notes": "Home + farmhouse + functional safety lighting",
+      "finalPaid": 0
     },
     {
       "id": "v-bullock",
@@ -85,7 +91,8 @@
       "budget": 0,
       "advance": 0,
       "status": "To contact",
-      "notes": "Decorated 50m family arrival"
+      "notes": "Decorated 50m family arrival",
+      "finalPaid": 0
     },
     {
       "id": "v-priest",
@@ -95,7 +102,8 @@
       "budget": 0,
       "advance": 0,
       "status": "To contact",
-      "notes": "Gopuja, Veda Ashirvachanam, mantras"
+      "notes": "Gopuja, Veda Ashirvachanam, mantras",
+      "finalPaid": 0
     },
     {
       "id": "v-evening",
@@ -105,7 +113,8 @@
       "budget": 0,
       "advance": 0,
       "status": "To contact",
-      "notes": "Hot bajji, live dosa, chutneys; no family cooking duty"
+      "notes": "Hot bajji, live dosa, chutneys; no family cooking duty",
+      "finalPaid": 0
     },
     {
       "id": "v-auto",
@@ -115,7 +124,162 @@
       "budget": 0,
       "advance": 0,
       "status": "To contact",
-      "notes": "Guest pickup/drop and local road-center transport"
+      "notes": "Guest pickup/drop and local road-center transport",
+      "finalPaid": 0
+    }
+  ],
+  "runSheet": [
+    {
+      "id": "r01",
+      "time": "05:30",
+      "title": "Vendor access, lighting, sound and breakfast setup",
+      "owner": "Event Captain",
+      "done": false,
+      "notes": ""
+    },
+    {
+      "id": "r02",
+      "time": "08:00",
+      "title": "Family settles into rooms; breakfast for 30–40",
+      "owner": "Family Coordinator",
+      "done": false,
+      "notes": ""
+    },
+    {
+      "id": "r03",
+      "time": "08:30",
+      "title": "Live devotional music / bhajans begin",
+      "owner": "Music Lead",
+      "done": false,
+      "notes": ""
+    },
+    {
+      "id": "r04",
+      "time": "09:00",
+      "title": "Guest arrival, tea/coffee, kids activities",
+      "owner": "Guest Coordinator + Anchor",
+      "done": false,
+      "notes": ""
+    },
+    {
+      "id": "r05",
+      "time": "10:15",
+      "title": "Shree quiet rest / sleep window begins",
+      "owner": "Vaishu + Shree Care",
+      "done": false,
+      "notes": "Move microphone/games away from Room 1"
+    },
+    {
+      "id": "r06",
+      "time": "11:15",
+      "title": "Gopuja with close family",
+      "owner": "Priest Coordinator",
+      "done": false,
+      "notes": ""
+    },
+    {
+      "id": "r07",
+      "time": "11:25",
+      "title": "Family boards decorated bullock cart",
+      "owner": "Procession Lead",
+      "done": false,
+      "notes": "No crackers/noise while animals are present"
+    },
+    {
+      "id": "r08",
+      "time": "11:30",
+      "title": "Bullock-cart arrival + rose-petal welcome",
+      "owner": "Nadaswaram + Event Team",
+      "done": false,
+      "notes": ""
+    },
+    {
+      "id": "r09",
+      "time": "11:40",
+      "title": "Veda Ashirvachanam and family blessings",
+      "owner": "Vedic Scholars",
+      "done": false,
+      "notes": ""
+    },
+    {
+      "id": "r10",
+      "time": "11:48",
+      "title": "Shreekari first-year film",
+      "owner": "AV Lead",
+      "done": false,
+      "notes": "Laptop + 2 pen-drive backups ready"
+    },
+    {
+      "id": "r11",
+      "time": "11:52",
+      "title": "Vinayaka / Hanuman mantra and Sanskrit chanting",
+      "owner": "Priest / Scholars",
+      "done": false,
+      "notes": ""
+    },
+    {
+      "id": "r12",
+      "time": "12:00",
+      "title": "Main cake cutting",
+      "owner": "Family",
+      "done": false,
+      "notes": ""
+    },
+    {
+      "id": "r13",
+      "time": "12:30",
+      "title": "Lunch opens",
+      "owner": "Catering Lead",
+      "done": false,
+      "notes": "Plan 180; stretch capability around 195"
+    },
+    {
+      "id": "r14",
+      "time": "14:00",
+      "title": "Main guest departure; Shree rest; venue reset",
+      "owner": "Event Team",
+      "done": false,
+      "notes": ""
+    },
+    {
+      "id": "r15",
+      "time": "15:30",
+      "title": "Ladies/adult games + prizes + Tambola",
+      "owner": "Anchor + Games Team",
+      "done": false,
+      "notes": "UPI, change bank and disposable pens ready"
+    },
+    {
+      "id": "r16",
+      "time": "17:00",
+      "title": "Tea + hot bajji/pakodi",
+      "owner": "Snack Cook",
+      "done": false,
+      "notes": ""
+    },
+    {
+      "id": "r17",
+      "time": "18:30",
+      "title": "Close-family night: live dosa + veg grill",
+      "owner": "Evening Food Team",
+      "done": false,
+      "notes": "35–45 people"
+    },
+    {
+      "id": "r18",
+      "time": "19:00",
+      "title": "Bonfire, karaoke, guitars, songs and dance",
+      "owner": "Family + AV Lead",
+      "done": false,
+      "notes": "Fire-safe zone; kids supervised"
+    },
+    {
+      "id": "r19",
+      "time": "21:30",
+      "title": "Wind down + post-event pack-up begins",
+      "owner": "Closeout Lead",
+      "done": false,
+      "notes": "TAKE HOME / RETURN VENDOR / DISCARD zones"
     }
   ]
 }
