@@ -14,5 +14,108 @@
   "rooms": [],
   "staff": [],
   "tasks": [],
-  "notes": ""
+  "notes": "",
+  "guests": [],
+  "vendors": [
+    {
+      "id": "v-photography",
+      "category": "Photography & Video",
+      "vendor": "",
+      "contact": "",
+      "budget": 0,
+      "advance": 0,
+      "status": "To contact",
+      "notes": "28/29/31 Oct coverage + first-year film"
+    },
+    {
+      "id": "v-catering",
+      "category": "Catering",
+      "vendor": "",
+      "contact": "",
+      "budget": 0,
+      "advance": 0,
+      "status": "To contact",
+      "notes": "31 Oct breakfast/tea/lunch/evening/night + 1 Nov morning"
+    },
+    {
+      "id": "v-anchor",
+      "category": "Anchor + 4 Helpers",
+      "vendor": "",
+      "contact": "",
+      "budget": 0,
+      "advance": 0,
+      "status": "To contact",
+      "notes": "Kids safety, games, ASK ME guest helper"
+    },
+    {
+      "id": "v-music",
+      "category": "Devotional Singers",
+      "vendor": "",
+      "contact": "",
+      "budget": 0,
+      "advance": 0,
+      "status": "To contact",
+      "notes": "Lalitha Sahasranamam, bhajans, selected songs"
+    },
+    {
+      "id": "v-nadaswaram",
+      "category": "Nadaswaram",
+      "vendor": "",
+      "contact": "",
+      "budget": 0,
+      "advance": 0,
+      "status": "To contact",
+      "notes": "Auspicious arrival segment"
+    },
+    {
+      "id": "v-decoration",
+      "category": "Decoration & Lighting",
+      "vendor": "",
+      "contact": "",
+      "budget": 0,
+      "advance": 0,
+      "status": "To contact",
+      "notes": "Home + farmhouse + functional safety lighting"
+    },
+    {
+      "id": "v-bullock",
+      "category": "Bullock Cart",
+      "vendor": "",
+      "contact": "",
+      "budget": 0,
+      "advance": 0,
+      "status": "To contact",
+      "notes": "Decorated 50m family arrival"
+    },
+    {
+      "id": "v-priest",
+      "category": "Priest / Vedic Scholars",
+      "vendor": "",
+      "contact": "",
+      "budget": 0,
+      "advance": 0,
+      "status": "To contact",
+      "notes": "Gopuja, Veda Ashirvachanam, mantras"
+    },
+    {
+      "id": "v-evening",
+      "category": "Evening Cook / Live Dosa",
+      "vendor": "",
+      "contact": "",
+      "budget": 0,
+      "advance": 0,
+      "status": "To contact",
+      "notes": "Hot bajji, live dosa, chutneys; no family cooking duty"
+    },
+    {
+      "id": "v-auto",
+      "category": "Dedicated Auto",
+      "vendor": "",
+      "contact": "",
+      "budget": 0,
+      "advance": 0,
+      "status": "To contact",
+      "notes": "Guest pickup/drop and local road-center transport"
+    }
+  ]
 }
