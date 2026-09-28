@@ -1,0 +1,5 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+  <rect width="512" height="512" rx="112" fill="#244f3b"/>
+  <rect x="18" y="18" width="476" height="476" rx="98" fill="none" stroke="#f4ead8" stroke-opacity="0.28" stroke-width="10"/>
+  <text x="256" y="330" text-anchor="middle" font-family="Noto Sans Telugu, Nirmala UI, Gautami, sans-serif" font-size="276" font-weight="700" fill="#fff8e9">&#x0C36;&#x0C4D;&#x0C30;&#x0C40;</text>
+</svg>
