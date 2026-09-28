@@ -1,0 +1,18 @@
+{
+  "meta": {
+    "title": "Event Command Center",
+    "subtitle": "Planning Dashboard",
+    "venue": "Venue",
+    "actualBirthday": "2026-10-29",
+    "mainFunction": "2026-10-31",
+    "expectedGuests": 0,
+    "invitedGuests": 0,
+    "updatedAt": null
+  },
+  "days": [],
+  "catering": [],
+  "rooms": [],
+  "staff": [],
+  "tasks": [],
+  "notes": ""
+}
