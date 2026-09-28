@@ -8,7 +8,8 @@ export function proxy(request: NextRequest) {
   if (
     pathname === "/login" ||
     pathname === "/api/auth/login" ||
-    pathname === "/api/auth/logout"
+    pathname === "/api/auth/logout" ||
+    pathname === "/shree-favicon.svg"
   ) {
     return NextResponse.next();
   }
