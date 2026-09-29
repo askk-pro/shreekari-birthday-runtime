@@ -38,7 +38,7 @@ export async function POST(request: Request) {
     name: SESSION_COOKIE,
     value: sessionToken,
     httpOnly: true,
-    secure: true,
+    secure: process.env.NODE_ENV === "production",
     sameSite: "strict",
     path: "/",
     maxAge: 60 * 60 * 24 * 14,

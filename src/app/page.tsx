@@ -163,15 +163,14 @@ export default function Home(){
  return <div className="appFrame">
   <aside className={"sidebar "+(mobileNav?"mobileOpen":"")}>
    <div className="sidebarBrand">
-    <div className="brandMark">శ్రీ</div>
+    <div className="brandMark">S</div>
     <div><b>Shreekari</b><span>Birthday Command Center</span></div>
     <button className="sidebarClose" onClick={()=>setMobileNav(false)} aria-label="Close navigation"><Icon name="close"/></button>
    </div>
 
    <div className="eventBadge">
-    <span>MAIN FUNCTION</span>
-    <b>31 October 2026</b>
-    <small>Satya Farm House · Peruru</small>
+    <div className="eventBadgeDate"><strong>31</strong><span>OCT</span></div>
+    <div className="eventBadgeCopy"><span>MAIN FUNCTION · SATURDAY</span><b>Shreekari Turns One</b><small>Satya Farm House · Peruru</small></div>
    </div>
 
    <nav className="sideNav">
@@ -211,7 +210,23 @@ export default function Home(){
 
    <main className="contentArea">
     {tab==="Today"&&<section className="pageStack">
-     <div className="metricGrid">
+     <section className="eventHero">
+      <div className="eventHeroOrnament eventHeroOrnamentA">✦</div><div className="eventHeroOrnament eventHeroOrnamentB">❋</div>
+      <div className="eventHeroCopy">
+       <span className="eventHeroKicker">PERURU · 31 OCTOBER 2026</span>
+       <h2><em>One beautiful year,</em><br/>one unforgettable day.</h2>
+       <p>Family, blessings, music, food and memories — coordinated from one calm command center.</p>
+       <div className="eventHeroTags"><span>Vedic blessings</span><span>Farmhouse celebration</span><span>Close-family night</span></div>
+      </div>
+      <div className="eventHeroDate"><small>SATURDAY</small><strong>31</strong><b>OCT</b><span>2026</span></div>
+      <div className="eventHeroStatus">
+       <div className="heroProgressRing" style={{"--p":`${progress*3.6}deg`} as React.CSSProperties}><div><strong>{progress}%</strong><span>ready</span></div></div>
+       <p><b>{runSheet.length-openToday}</b> / {runSheet.length} run-sheet checkpoints complete</p>
+      </div>
+      <div className="eventHeroMonogram">S</div>
+     </section>
+
+     <div className="metricGrid creativeMetrics">
       <article className="metricCard accent"><span>Event run sheet</span><strong>{runSheet.length-openToday}<small>/ {runSheet.length}</small></strong><p>{openToday} checkpoints remaining</p><div className="metricProgress"><i style={{width:`${Math.round((runSheet.length-openToday)/Math.max(runSheet.length,1)*100)}%`}}/></div></article>
       <article className="metricCard"><span>Guest response</span><strong>{confirmed||"—"}</strong><p>{maybe} maybe · lunch planning ~180</p></article>
       <article className="metricCard"><span>Preparation</span><strong>{progress}%</strong><p>{openTasks} open of {plan.tasks.length} tasks</p></article>
@@ -249,7 +264,11 @@ export default function Home(){
     </section>}
 
     {tab==="Dashboard"&&<section className="pageStack">
-     <div className="metricGrid">
+     <section className="overviewStory">
+      <div><span>THE CELEBRATION STORY</span><h2>29 Oct <i>birthday</i> → 30 Oct <i>prepare</i> → 31 Oct <i>celebrate</i></h2></div>
+      <div className="overviewStoryMark">S</div>
+     </section>
+     <div className="metricGrid creativeMetrics">
       <article className="metricCard accent"><span>Overall readiness</span><strong>{progress}%</strong><p>{plan.tasks.filter(t=>t.done).length} of {plan.tasks.length} tasks complete</p><div className="metricProgress"><i style={{width:`${progress}%`}}/></div></article>
       <article className="metricCard"><span>Invited</span><strong>{plan.meta.invitedGuests}</strong><p>{confirmed||0} confirmed so far</p></article>
       <article className="metricCard"><span>Expected attendance</span><strong>{plan.meta.expectedGuests}</strong><p>Main lunch planning: 180</p></article>
@@ -380,11 +399,11 @@ export default function Home(){
      <section className="surface noPrint">
       <div className="surfaceHeader responsiveHeader"><div><span className="sectionKicker">VENUE PRINT PACK</span><h2>Operational notices</h2><p>Print only the pages you need and place them at the relevant venue points.</p></div><button className="primaryButton" onClick={()=>window.print()}>Print pack</button></div>
      </section>
-     {plan.rooms.map(r=><article className="poster professionalPoster" key={r.room}><div className="posterMark">శ్రీ</div><span>{r.room}</span><h2>{r.title}</h2><p>{r.use}</p></article>)}
-     <article className="poster professionalPoster"><div className="posterMark">శ్రీ</div><span>GUEST SUPPORT</span><h2>NEED HELP? ASK ME</h2><p>For directions, water, washrooms, charging, first aid, transport or any guest need, please contact the team member wearing the ASK ME badge.</p></article>
-     <article className="poster professionalPoster"><div className="posterMark">శ్రీ</div><span>SAFETY NOTICE</span><h2>CHILDREN MUST BE SUPERVISED</h2><p>Pond • Well • Kids Pool • Tree House • Zip / Play Areas</p></article>
-     <article className="poster professionalPoster"><div className="posterMark">శ్రీ</div><span>GUEST UTILITY</span><h2>MOBILE CHARGING STATION</h2><p>Please keep your phone with you and use the charging rack responsibly.</p></article>
-     <article className="poster professionalPoster"><div className="posterMark">శ్రీ</div><span>GUEST COMFORT</span><h2>COMFORT CORNER</h2><p>Odomos • Tissues • Sanitizer • Shawls • Basic essentials available</p></article>
+     {plan.rooms.map(r=><article className="poster professionalPoster" key={r.room}><div className="posterMark">S</div><span>{r.room}</span><h2>{r.title}</h2><p>{r.use}</p></article>)}
+     <article className="poster professionalPoster"><div className="posterMark">S</div><span>GUEST SUPPORT</span><h2>NEED HELP? ASK ME</h2><p>For directions, water, washrooms, charging, first aid, transport or any guest need, please contact the team member wearing the ASK ME badge.</p></article>
+     <article className="poster professionalPoster"><div className="posterMark">S</div><span>SAFETY NOTICE</span><h2>CHILDREN MUST BE SUPERVISED</h2><p>Pond • Well • Kids Pool • Tree House • Zip / Play Areas</p></article>
+     <article className="poster professionalPoster"><div className="posterMark">S</div><span>GUEST UTILITY</span><h2>MOBILE CHARGING STATION</h2><p>Please keep your phone with you and use the charging rack responsibly.</p></article>
+     <article className="poster professionalPoster"><div className="posterMark">S</div><span>GUEST COMFORT</span><h2>COMFORT CORNER</h2><p>Odomos • Tissues • Sanitizer • Shawls • Basic essentials available</p></article>
     </section>}
    </main>
   </div>

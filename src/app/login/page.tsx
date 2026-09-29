@@ -59,7 +59,7 @@ export default function LoginPage() {
 
       <section className="loginPanel">
         <form className="loginCard" onSubmit={submit}>
-          <div className="loginMark">శ్రీ</div>
+          <div className="loginMark">S</div>
           <span className="loginEyebrow">FAMILY ACCESS</span>
           <h2>Welcome back</h2>
           <p className="loginLead">Sign in to Shreekari’s Birthday Command Center.</p>
