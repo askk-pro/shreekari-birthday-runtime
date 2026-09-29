@@ -168,10 +168,6 @@ export default function Home(){
     <button className="sidebarClose" onClick={()=>setMobileNav(false)} aria-label="Close navigation"><Icon name="close"/></button>
    </div>
 
-   <div className="eventBadge">
-    <div className="eventBadgeDate"><strong>31</strong><span>OCT</span></div>
-    <div className="eventBadgeCopy"><span>MAIN FUNCTION · SATURDAY</span><b>Shreekari Turns One</b><small>Satya Farm House · Peruru</small></div>
-   </div>
 
    <nav className="sideNav">
     {navGroups.map(section=><div className="navSection" key={section.label}>
